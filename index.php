@@ -4,7 +4,11 @@ in the specified file and copies it into the file that uses the include statemen
 Including files is very useful when you want to include
 the same PHP, HTML, or text on multiple pages of a website. -->
 
-<?php include("includes/header.php"); ?>
+<?php
+
+$pageTitle = "Personal Media Library";
+
+include("includes/header.php"); ?>
 
 		<div class="section catalog random">
 
