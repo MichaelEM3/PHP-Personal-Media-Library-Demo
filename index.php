@@ -1,29 +1,11 @@
+<!--The include (or require) statement takes all the text/code/markup that exists
+in the specified file and copies it into the file that uses the include statement.
 
-<html>
-<head>
-	<title><?php echo "Personal Media Library"; ?></title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-<body>
+Including files is very useful when you want to include
+the same PHP, HTML, or text on multiple pages of a website. -->
 
-	<div class="header">
+<?php include("includes/header.php"); ?>
 
-		<div class="wrapper">
-
-			<h1 class="branding-title"><a href="./">Personal Media Library</a></h1>
-
-			<ul class="nav">
-                <li class="books"><a href="catalog.php?cat=books">Books</a></li>
-                <li class="movies"><a href="catalog.php?cat=movies">Movies</a></li>
-                <li class="music"><a href="catalog.php?cat=music">Music</a></li>
-                <li class="suggest"><a href="suggest.php">Suggest</a></li>
-            </ul>
-
-		</div>
-
-	</div>
-
-	<div id="content">
 		<div class="section catalog random">
 
 			<div class="wrapper">
@@ -38,7 +20,7 @@
 
 		</div>
 
-	</div>
+	</div><!-- end content -->
 
 	<div class="footer">
 
