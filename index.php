@@ -7,6 +7,7 @@ the same PHP, HTML, or text on multiple pages of a website. -->
 <?php
 
 $pageTitle = "Personal Media Library";
+$section = null;
 
 include("includes/header.php"); ?>
 
