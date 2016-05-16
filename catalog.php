@@ -1,5 +1,11 @@
 <?php
 
+$catalog = array(
+  "Design Patterns",
+  "Forrest Gump",
+  "Beethoven"
+);
+
 $pageTitle = "Full Catalog";
 $section = null;
 
@@ -22,8 +28,25 @@ if (isset($_GET["cat"])) {
 
 include("includes/header.php"); ?>
 
-<div class="section page">
-  <h1><?php echo $pageTitle; ?></h1>
+<div class="section catalog page">
+
+  <div class="wrapper">
+
+    <h1><?php echo $pageTitle; ?></h1>
+
+    <ul>
+      <?php foreach($catalog as $item) {
+        echo "<li>" . $item . "</li>";
+      }
+      ?>
+      <!-- <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li> -->
+      <!-- the PHP above accomplishes what these list tags intended. -->
+    </ul>
+
+  </div>
+
 </div>
 
 <?php include("includes/footer.php"); ?>
