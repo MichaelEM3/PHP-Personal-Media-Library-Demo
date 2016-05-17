@@ -1,25 +1,5 @@
 <?php
 
-//it's good practice to start with an empty array.
-//101 is us assigning a key to the value of "Design Patterns", PHP lets you set keys yourself
-//we're giving books keys in the 100s, movies keys in the 200s, music the 300s
-
-$catalog = array();
-$catalog[101] = "Design Patterns";
-$catalog[201] = "Forrest Gump";
-$catalog[301] = "Beethoven";
-
-//Original way we created this array. See above for best practice.
-// $catalog = array(
-//   "Design Patterns",
-//   "Forrest Gump",
-//   "Beethoven"
-// );
-
-$catalog[102] = "Clean Code";
-//tells PHP to add one new element to the array using whatever index is available next.
-//PHP will assign an index of 3. Design Patterns = 0, remember.
-
 $pageTitle = "Full Catalog";
 $section = null;
 
