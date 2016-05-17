@@ -1,4 +1,5 @@
 <?php
+include("includes/data.php");
 
 $pageTitle = "Full Catalog";
 $section = null;
@@ -28,17 +29,19 @@ include("includes/header.php"); ?>
 
     <h1><?php echo $pageTitle; ?></h1>
 
-    <ul>
+    <ul class="items">
       <!--using a foreeach loop to print all the catalog array items to the page -->
       <!--$item is a variable name we created just for this loop -->
-      <?php foreach($catalog as $item) {
-        echo "<li>" . $item . "</li>";
+      <?php
+      foreach($catalog as $item) {
+        echo "<li><a href='#'><img src='"
+          . $item["img"] . " ' alt=' "
+          . $item["title"] . "' />"
+          . "<p>View Details</p>"
+          . "</a></li>";
       }
       ?>
-      <!-- <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li> -->
-      <!-- the PHP above accomplishes what these list tags intended. -->
+
     </ul>
 
   </div>
